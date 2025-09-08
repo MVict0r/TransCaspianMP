@@ -61,24 +61,38 @@ img{
     height: auto;
 }
 
+.container {
+    max-width: 1360px !important;
+}
+h1, h2, h3, p{
+    margin: 0;
+    padding: 0;
+}
+
 /*===========================GENERAL===========================================*/
 
 
 /*===========================HEADER===========================================*/
-.header{
-    max-width: 1680px;
-    margin: 0 auto;
-    position: absolute;   /* или fixed, если нужно всегда наверху при скролле */
+.header {
+    position: absolute;   /* или fixed */
     top: 0;
     left: 0;
     width: 100%;
     z-index: 10;
-    background: transparent; /* убираем фон */
-}
-.navbar {
-    background: transparent !important; /* прозрачность */
+    background: transparent;
+    margin: 0;            /* убираем margin */
+    max-width: 100%;      /* убираем ограничение ширины */
 }
 
+.navbar {
+    width: 100%;          /* растягиваем на всю ширину */
+    background: transparent !important;
+    padding-left: 2rem;   /* если нужен отступ слева */
+    padding-right: 2rem;  /* если нужен отступ справа */
+}
+.navbar-nav{
+    gap: 40px;
+}
 .btn-login{
     display: flex;
     background: linear-gradient(180deg, #C7A56D 0%, #8F703D 100%);
@@ -87,6 +101,12 @@ img{
     align-items: center;
     border: 1px solid var(--yellow-color);
     border-radius: 16px;
+}
+.nav-link{
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
 }
 /*===========================HEADER===========================================*/
 
@@ -130,3 +150,204 @@ img{
     padding: 13px 20px;
 }
 /*============================HERO-SECTION=====================================*/
+
+
+/*============================ACADEMY-SECTION=====================================*/
+.academy-section {
+    background: #c3a483; /* фон секции */
+    padding: 142px 0 148px 0;
+    position: relative;
+    overflow: hidden;
+}
+.bg-plane, .bg-map{
+    position: absolute;
+    display: block;
+    opacity: 40%;
+}
+.bg-plane{
+    top: 50px;
+    left: 100px;
+    width: 600px;
+    height: 447px;
+}
+.bg-map{
+    width: 973px;
+    height: 850px;
+    bottom: 20px;
+    right: 40px;
+}
+
+.grid-gap{
+    display: grid;
+    gap: 104px;
+}
+.card {
+    border: none;
+    border-radius: 48px;
+    z-index: 20;
+
+}
+.wrapper-academy-card{
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90deg, #F6F6F6 36.57%, #FFF0D7 100%);
+
+}
+.bg-academy-card{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.card-content{
+    display: grid;
+    grid-gap: 20px;
+    padding: 48px;
+}
+.card-title{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--black-primary-color);
+    margin: 0;
+}
+.card-text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--black-secondary-color);
+}
+.wrapper-photo{
+    position: relative;
+    /*overflow: hidden;*/
+}
+.academy-photo{
+    position: absolute;
+    top: -196px;
+    left: 0;
+}
+
+.statistic-wrapper{
+    padding: 28px;
+    display: grid;
+    grid-gap: 24px;
+    background: rgba(246, 246, 246, 1);
+    position: relative;
+    overflow: hidden;
+}
+.statistic-bg-img{
+    position: absolute;
+    opacity: 10%;
+    right: 150px;
+    bottom: 0;
+    height: 400px;
+    width: 410px;
+}
+.statistic-title{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: var(--black-primary-color);
+}
+.statistic-wrapper-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.statistic-card-title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--black-primary-color);
+}
+.statistic-card{
+    /*display: grid;*/
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
+    border: 1px solid var(--white-color);
+    border-radius: 24px;
+}
+.statistic-number{
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 44px;
+    color: rgba(227, 165, 60, 1);
+}
+.statistic-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--black-primary-color);
+}
+
+/*============================ACADEMY-SECTION=====================================*/
+
+
+
+
+/*============================EVOLUTION-SECTION=====================================*/
+.evolution-section{
+    padding: 44px 0;
+}
+.evolution-container{
+    background: rgba(246, 246, 246, 1);
+    padding: 28px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    position: relative;
+    overflow: hidden;
+}
+.bg-deer{
+    position: absolute;
+    top: 0;
+    right: 150px;
+
+    opacity: 20%;
+}
+
+.evolution-title{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: var(--black-primary-color);
+}
+.evolution-wrapper-card{
+    z-index: 2;
+}
+.evolution-card-img{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.evolution-card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
+    border: 1px solid var(--white-color);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.evolution-card-title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--black-primary-color);
+}
+
+.evolution-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--black-secondary-color);
+}
+/*============================EVOLUTION-SECTION=====================================*/
