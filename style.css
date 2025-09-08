@@ -1,0 +1,132 @@
+:root {
+    --white-color: #ffffff;
+    --black-primary-color: #1f1f1f;
+    --black-secondary-color: #606060;
+    --brown-color: #653E03;
+    --green-color: #0A521F;
+    --blue-color: #2F78D7;
+    --yellow-color: #F99806;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('assets/fonts/sfpro/SFProText-Light.woff2') format('woff2'),
+    url('assets/fonts/sfpro/SFProText-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('assets/fonts/sfpro/SFProText-Regular.woff2') format('woff2'),
+    url('assets/fonts/sfpro/SFProText-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('assets/fonts/sfpro/SFProText-Medium.woff2') format('woff2'),
+    url('assets/fonts/sfpro/SFProText-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('assets/fonts/sfpro/SFProText-Semibold.woff2') format('woff2'),
+    url('assets/fonts/sfpro/SFProText-Semibold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('assets/fonts/sfpro/SFProText-Bold.woff2') format('woff2'),
+    url('assets/fonts/sfpro/SFProText-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*===========================GENERAL===========================================*/
+body{
+    font-family: 'SF Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--black-primary-color);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*===========================GENERAL===========================================*/
+
+
+/*===========================HEADER===========================================*/
+.header{
+    max-width: 1680px;
+    margin: 0 auto;
+    position: absolute;   /* или fixed, если нужно всегда наверху при скролле */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: transparent; /* убираем фон */
+}
+.navbar {
+    background: transparent !important; /* прозрачность */
+}
+
+.btn-login{
+    display: flex;
+    background: linear-gradient(180deg, #C7A56D 0%, #8F703D 100%);
+    padding: 13px 50px;
+    gap: 8px;
+    align-items: center;
+    border: 1px solid var(--yellow-color);
+    border-radius: 16px;
+}
+/*===========================HEADER===========================================*/
+
+
+/*============================HERO-SECTION=====================================*/
+.hero-section{
+    height: 100vh; /* секция на весь экран */
+    background: url('./assets/img/hero-section.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.hero-title{
+    font-size: 68px;
+    font-weight: 400;
+    line-height: 80px;
+    color: var(--white-color);
+}
+.hero-subtitle{
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--black-primary-color);
+    margin-bottom: 48px;
+}
+
+.hero-btn{
+    background: linear-gradient(180deg, #C7A56D 0%, #8F703D 100%);
+    border-radius: 10px;
+    border: 1px solid #269D4A;
+    color: var(--green-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 13px 20px;
+}
+.btn-more{
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 13px 20px;
+}
+/*============================HERO-SECTION=====================================*/
