@@ -54,6 +54,7 @@ body{
     font-weight: 400;
     font-size: 16px;
     color: var(--black-primary-color);
+    letter-spacing: -1px;
 }
 
 img{
@@ -69,26 +70,68 @@ h1, h2, h3, p{
     padding: 0;
 }
 
+.SB-title{
+    font-family: 'SF Pro', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: var(--black-primary-color);
+    margin: 0;
+    padding: 0;
+}
+.M-title{
+    font-family: 'SF Pro', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--black-primary-color);
+    margin: 0;
+    padding: 0;
+}
+.M20-title{
+    font-family: 'SF Pro', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--black-primary-color);
+}
+
+.R24-subtitle{
+    font-family: 'SF Pro', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -1px;
+    color: var(--black-secondary-color);
+}
+.R18-text{
+    font-family: 'SF Pro', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--black-secondary-color);
+}
+
 /*===========================GENERAL===========================================*/
 
 
 /*===========================HEADER===========================================*/
 .header {
-    position: absolute;   /* или fixed */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 10;
     background: transparent;
-    margin: 0;            /* убираем margin */
-    max-width: 100%;      /* убираем ограничение ширины */
+    margin: 0;
+    max-width: 100%;
 }
 
 .navbar {
-    width: 100%;          /* растягиваем на всю ширину */
+    width: 100%;
     background: transparent !important;
-    padding-left: 2rem;   /* если нужен отступ слева */
-    padding-right: 2rem;  /* если нужен отступ справа */
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 .navbar-nav{
     gap: 40px;
@@ -113,7 +156,7 @@ h1, h2, h3, p{
 
 /*============================HERO-SECTION=====================================*/
 .hero-section{
-    height: 100vh; /* секция на весь экран */
+    height: 100vh;
     background: url('./assets/img/hero-section.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
@@ -154,7 +197,7 @@ h1, h2, h3, p{
 
 /*============================ACADEMY-SECTION=====================================*/
 .academy-section {
-    background: #c3a483; /* фон секции */
+    background: #c3a483;
     padding: 142px 0 148px 0;
     position: relative;
     overflow: hidden;
@@ -185,7 +228,7 @@ h1, h2, h3, p{
     border: none;
     border-radius: 48px;
     z-index: 20;
-
+    padding: 0;
 }
 .wrapper-academy-card{
     position: relative;
@@ -204,13 +247,7 @@ h1, h2, h3, p{
     grid-gap: 20px;
     padding: 48px;
 }
-.card-title{
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 44px;
-    color: var(--black-primary-color);
-    margin: 0;
-}
+
 .card-text{
     font-weight: 400;
     font-size: 20px;
@@ -242,12 +279,6 @@ h1, h2, h3, p{
     bottom: 0;
     height: 400px;
     width: 410px;
-}
-.statistic-title{
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 34px;
-    color: var(--black-primary-color);
 }
 .statistic-wrapper-card{
     display: flex;
@@ -312,34 +343,38 @@ h1, h2, h3, p{
     opacity: 20%;
 }
 
-.evolution-title{
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 34px;
-    color: var(--black-primary-color);
+.evolution-wrapper-cards{
+    display: flex;
+
 }
 .evolution-wrapper-card{
     z-index: 2;
+
 }
 .evolution-card-img{
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
 
-.evolution-card{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+.evolution-card-wrapper-content{
+    display: grid;
+    grid-template-columns: 1fr 48px;
+    grid-gap: 16px;
     padding: 16px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
     border: 1px solid var(--white-color);
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
 }
+.evolution-card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 .evolution-card-title{
     font-weight: 500;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
     color: var(--black-primary-color);
 }
@@ -351,3 +386,129 @@ h1, h2, h3, p{
     color: var(--black-secondary-color);
 }
 /*============================EVOLUTION-SECTION=====================================*/
+
+
+
+/*=============================LMS-SECTION=====================================*/
+.lms-section{
+    height: 100vh;
+    background: url('./assets/img/lms-section.png') no-repeat center center;
+    background-size: cover;
+    /*padding: 44px 0 42px 0;*/
+}
+
+
+
+.lms-container-wrapper{
+    background: #F6F6F6;
+    border-radius: 32px;
+    padding: 28px;
+    position: relative;
+}
+
+.bg-lms-ico{
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.lms-card{
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
+    border: 1px solid var(--white-color);
+    overflow: hidden;
+    z-index: 20;
+}
+.lms-title-card{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.wrapper-tags{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.lms-tag{
+    max-width: max-content;
+    background: #2F78D729;
+    padding: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--blue-color);
+    border-radius: 16px;
+}
+.lms-btn{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px;
+    background: linear-gradient(180deg, #F99806 0%, #FFD392 100%);
+    border: 1px solid var(--yellow-color);
+    border-radius: 32px;
+    max-width: max-content;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #653E03;
+}
+/*=============================LMS-SECTION=====================================*/
+
+
+
+/*=========================TRANSFORMATION-SECTION=====================================*/
+.transformation-section{
+    padding: 44px 0;
+}
+.transformation-container{
+    background: #F6F6F6;
+    padding: 28px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* КАРТОЧКИ С КАРТИНКОЙ И ПОДПИСЬЮ */
+.feature-card {
+    position: relative;
+    background: #fff;
+}
+
+/* Высоты (можешь подогнать под макет) */
+.feature-card .feature-img {
+}
+.feature-card--tall .feature-img {
+    height: 100%;
+} /* средняя высокая карточка */
+
+/* Градиентные подложки под текстом */
+.feature-overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 16px 18px 18px;
+}
+.overlay--white{
+    color: #111;
+    background: linear-gradient(360deg,
+    #FFFFFF 56.73%,
+    rgba(255, 255, 255, 0.72) 74.04%,
+    rgba(255, 255, 255, 0) 100%);
+}
+.overlay--blue{
+    color: #fff;
+    background: linear-gradient(180deg,
+    rgba(47, 120, 215, 0) 0%,
+    rgba(47, 120, 215, 0.72) 25%,
+    #2F78D7 50.96%);
+}
+
+
+/*=========================TRANSFORMATION-SECTION=====================================*/
