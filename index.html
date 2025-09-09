@@ -9,7 +9,7 @@
 </head>
 <body>
 <header class="header">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg bg-transparent px-4">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <svg width="140" height="50" viewBox="0 0 140 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,21 +53,30 @@
 
             <!-- Навигация -->
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav gap-5">
                     <li class="nav-item"><a class="nav-link" href="#">Курсы</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Технологии</a></li>
                 </ul>
+
+                <!-- Кнопка для мобилки -->
+                <div class="mt-3 d-lg-none">
+                    <button class="btn btn-login d-flex align-items-center gap-2 w-100">
+                        Войти
+                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.50391 8.44873C7.40391 8.44873 6.46224 8.05706 5.67891 7.27373C4.89557 6.4904 4.50391 5.54873 4.50391 4.44873C4.50391 3.34873 4.89557 2.40706 5.67891 1.62373C6.46224 0.840397 7.40391 0.44873 8.50391 0.44873C9.60391 0.44873 10.5456 0.840397 11.3289 1.62373C12.1122 2.40706 12.5039 3.34873 12.5039 4.44873C12.5039 5.54873 12.1122 6.4904 11.3289 7.27373C10.5456 8.05706 9.60391 8.44873 8.50391 8.44873ZM0.503906 16.4487V13.6487C0.503906 13.0821 0.64974 12.5612 0.941406 12.0862C1.23307 11.6112 1.62057 11.2487 2.10391 10.9987C3.13724 10.4821 4.18724 10.0946 5.25391 9.83623C6.32057 9.5779 7.40391 9.44873 8.50391 9.44873C9.60391 9.44873 10.6872 9.5779 11.7539 9.83623C12.8206 10.0946 13.8706 10.4821 14.9039 10.9987C15.3872 11.2487 15.7747 11.6112 16.0664 12.0862C16.3581 12.5612 16.5039 13.0821 16.5039 13.6487V16.4487H0.503906Z" fill="#653E03"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
 
             <!-- Кнопка справа -->
-            <div class="d-flex">
-                <button class="btn btn-login">
+            <div class="d-none d-lg-flex">
+                <button class="btn btn-login d-flex align-items-center gap-2">
                     Войти
                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8.50391 8.44873C7.40391 8.44873 6.46224 8.05706 5.67891 7.27373C4.89557 6.4904 4.50391 5.54873 4.50391 4.44873C4.50391 3.34873 4.89557 2.40706 5.67891 1.62373C6.46224 0.840397 7.40391 0.44873 8.50391 0.44873C9.60391 0.44873 10.5456 0.840397 11.3289 1.62373C12.1122 2.40706 12.5039 3.34873 12.5039 4.44873C12.5039 5.54873 12.1122 6.4904 11.3289 7.27373C10.5456 8.05706 9.60391 8.44873 8.50391 8.44873ZM0.503906 16.4487V13.6487C0.503906 13.0821 0.64974 12.5612 0.941406 12.0862C1.23307 11.6112 1.62057 11.2487 2.10391 10.9987C3.13724 10.4821 4.18724 10.0946 5.25391 9.83623C6.32057 9.5779 7.40391 9.44873 8.50391 9.44873C9.60391 9.44873 10.6872 9.5779 11.7539 9.83623C12.8206 10.0946 13.8706 10.4821 14.9039 10.9987C15.3872 11.2487 15.7747 11.6112 16.0664 12.0862C16.3581 12.5612 16.5039 13.0821 16.5039 13.6487V16.4487H0.503906Z" fill="#653E03"/>
                     </svg>
-
                 </button>
             </div>
         </div>
@@ -85,8 +94,8 @@
         </p>
 
         <div class="d-flex justify-content-center gap-3">
-            <a href="#" class="btn hero-btn">Начать обучение</a>
-            <a href="#" class="btn btn-more">Узнать больше</a>
+            <a href="#" class="btn M20-title hero-btn">Начать обучение</a>
+            <a href="#" class="btn M20-title btn-more">Узнать больше</a>
         </div>
     </div>
 </section>

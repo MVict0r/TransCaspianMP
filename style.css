@@ -123,25 +123,11 @@ h1, h2, h3, p{
     width: 100%;
     z-index: 10;
     background: transparent;
-    margin: 0;
-    max-width: 100%;
 }
 
-.navbar {
-    width: 100%;
-    background: transparent !important;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-.navbar-nav{
-    gap: 40px;
-}
 .btn-login{
-    display: flex;
     background: linear-gradient(180deg, #C7A56D 0%, #8F703D 100%);
     padding: 13px 50px;
-    gap: 8px;
-    align-items: center;
     border: 1px solid var(--yellow-color);
     border-radius: 16px;
 }
@@ -156,21 +142,20 @@ h1, h2, h3, p{
 
 /*============================HERO-SECTION=====================================*/
 .hero-section{
-    height: 100vh;
+    min-height: 100dvh;
     background: url('./assets/img/hero-section.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
 }
 .hero-title{
-    font-size: 68px;
+    font-size: clamp(28px, 6vw, 68px);
     font-weight: 400;
-    line-height: 80px;
+    line-height: 1.2;
     color: var(--white-color);
 }
 .hero-subtitle{
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 32px;
+    font-size: clamp(18px, 3vw, 26px);
+    line-height: 1.4;
     color: var(--black-primary-color);
     margin-bottom: 48px;
 }
@@ -180,17 +165,13 @@ h1, h2, h3, p{
     border-radius: 10px;
     border: 1px solid #269D4A;
     color: var(--green-color);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 26px;
     padding: 13px 20px;
+    font-size: clamp(14px, 2.5vw, 20px);
 }
 .btn-more{
     color: var(--white-color);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 26px;
     padding: 13px 20px;
+    font-size: clamp(16px, 2.5vw, 20px);
 }
 /*============================HERO-SECTION=====================================*/
 
