@@ -130,6 +130,7 @@ h1, h2, h3, p{
     padding: 13px 50px;
     border: 1px solid var(--yellow-color);
     border-radius: 16px;
+    max-width: max-content;
 }
 .nav-link{
     color: var(--white-color);
@@ -179,7 +180,7 @@ h1, h2, h3, p{
 /*============================ACADEMY-SECTION=====================================*/
 .academy-section {
     background: #c3a483;
-    padding: 142px 0 148px 0;
+    padding: clamp(60px, 10vw, 142px) 0 clamp(60px, 12vw, 148px) 0;
     position: relative;
     overflow: hidden;
 }
@@ -187,6 +188,8 @@ h1, h2, h3, p{
     position: absolute;
     display: block;
     opacity: 40%;
+    max-width: 100%;
+    height: auto;
 }
 .bg-plane{
     top: 50px;
@@ -203,7 +206,7 @@ h1, h2, h3, p{
 
 .grid-gap{
     display: grid;
-    gap: 104px;
+    gap: clamp(40px, 6vw, 104px);
 }
 .card {
     border: none;
@@ -222,6 +225,12 @@ h1, h2, h3, p{
     right: 0;
     top: 0;
 }
+.academy-photo{
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    max-height: 400px;
+}
 
 .card-content{
     display: grid;
@@ -231,18 +240,9 @@ h1, h2, h3, p{
 
 .card-text{
     font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: clamp(14px, 2vw, 20px);
+    line-height: 1.5;
     color: var(--black-secondary-color);
-}
-.wrapper-photo{
-    position: relative;
-    /*overflow: hidden;*/
-}
-.academy-photo{
-    position: absolute;
-    top: -196px;
-    left: 0;
 }
 
 .statistic-wrapper{
@@ -285,8 +285,8 @@ h1, h2, h3, p{
 }
 .statistic-number{
     font-weight: 300;
-    font-size: 44px;
-    line-height: 44px;
+    font-size: clamp(28px, 5vw, 44px);
+    line-height: 1.5;
     color: rgba(227, 165, 60, 1);
 }
 .statistic-text{
@@ -355,15 +355,15 @@ h1, h2, h3, p{
 }
 .evolution-card-title{
     font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
+    font-size: clamp(14px, 2vw, 17px);
+    line-height: 1.2;
     color: var(--black-primary-color);
 }
 
 .evolution-text{
     font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: clamp(14px, 2vw, 18px);
+    line-height: 1.4;
     color: var(--black-secondary-color);
 }
 /*============================EVOLUTION-SECTION=====================================*/
@@ -372,7 +372,8 @@ h1, h2, h3, p{
 
 /*=============================LMS-SECTION=====================================*/
 .lms-section{
-    height: 100vh;
+    min-height: 100vh;
+    padding: 60px 0;
     background: url('./assets/img/lms-section.png') no-repeat center center;
     background-size: cover;
     /*padding: 44px 0 42px 0;*/
