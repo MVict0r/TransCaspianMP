@@ -220,10 +220,10 @@ section{
     top: 0;
 }
 .academy-photo{
+    max-height: 300px;
     position: absolute;
     right: -20px;
     bottom: 0;
-    max-height: 400px;
 }
 
 .card-content{
