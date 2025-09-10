@@ -347,8 +347,6 @@ section{
     background-size: cover;
 }
 
-
-
 .lms-container-wrapper{
     background: #F6F6F6;
     opacity: 90%;
@@ -360,7 +358,7 @@ section{
 .bg-lms-ico{
     position: absolute;
     left: 100px;
-    top: 0;
+    bottom: 0;
 }
 
 .lms-card{
