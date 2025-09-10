@@ -57,10 +57,7 @@ body{
     letter-spacing: -1px;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
-}
+
 
 .container {
     max-width: 1360px !important;
@@ -71,7 +68,6 @@ h1, h2, h3, p{
 }
 
 .SB-title{
-    font-family: 'SF Pro', sans-serif;
     font-weight: 600;
     font-size: 28px;
     line-height: 34px;
@@ -80,7 +76,6 @@ h1, h2, h3, p{
     padding: 0;
 }
 .M-title{
-    font-family: 'SF Pro', sans-serif;
     font-weight: 500;
     font-size: 36px;
     line-height: 44px;
@@ -89,7 +84,6 @@ h1, h2, h3, p{
     padding: 0;
 }
 .M20-title{
-    font-family: 'SF Pro', sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 26px;
@@ -97,7 +91,6 @@ h1, h2, h3, p{
 }
 
 .R24-subtitle{
-    font-family: 'SF Pro', sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
@@ -105,7 +98,6 @@ h1, h2, h3, p{
     color: var(--black-secondary-color);
 }
 .R18-text{
-    font-family: 'SF Pro', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -324,28 +316,10 @@ h1, h2, h3, p{
     opacity: 20%;
 }
 
-.evolution-wrapper-cards{
-    display: flex;
-
-}
-.evolution-wrapper-card{
-    z-index: 2;
-
-}
-.evolution-card-img{
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-}
-
-.evolution-card-wrapper-content{
-    display: grid;
-    grid-template-columns: 1fr 48px;
-    grid-gap: 16px;
-    padding: 16px;
+.evolution-card-style {
+    border-radius: 16px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
     border: 1px solid var(--white-color);
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
 }
 .evolution-card{
     flex: 1;
@@ -373,7 +347,7 @@ h1, h2, h3, p{
 /*=============================LMS-SECTION=====================================*/
 .lms-section{
     min-height: 100vh;
-    padding: 60px 0;
+    padding: 60px 12px;
     background: url('./assets/img/lms-section.png') no-repeat center center;
     background-size: cover;
     /*padding: 44px 0 42px 0;*/
@@ -383,6 +357,7 @@ h1, h2, h3, p{
 
 .lms-container-wrapper{
     background: #F6F6F6;
+    opacity: 90%;
     border-radius: 32px;
     padding: 28px;
     position: relative;
@@ -422,18 +397,9 @@ h1, h2, h3, p{
     border-radius: 16px;
 }
 .lms-btn{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 14px;
     background: linear-gradient(180deg, #F99806 0%, #FFD392 100%);
     border: 1px solid var(--yellow-color);
-    border-radius: 32px;
     max-width: max-content;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 26px;
-    color: #653E03;
 }
 /*=============================LMS-SECTION=====================================*/
 
@@ -441,7 +407,7 @@ h1, h2, h3, p{
 
 /*=========================TRANSFORMATION-SECTION=====================================*/
 .transformation-section{
-    padding: 44px 0;
+    padding: 44px 12px;
 }
 .transformation-container{
     background: #F6F6F6;
