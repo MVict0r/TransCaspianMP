@@ -22,6 +22,7 @@
 @media (max-width: 768px) {
     .lms-card img {
         max-height: 300px;
+        width: auto;
         object-fit: cover;
     }
 }
