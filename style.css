@@ -116,18 +116,18 @@ section{
     left: 0;
     width: 100%;
     z-index: 10;
-    background: transparent;
+    background: #FFFFFF52;
 }
 
 .btn-login{
-    background: linear-gradient(180deg, #C7A56D 0%, #8F703D 100%);
-    padding: 13px 50px;
+    background: linear-gradient(180deg, #F99806 0%, #FFD392 100%);
+    padding: 8px 20px;
     border: 1px solid var(--yellow-color);
-    border-radius: 16px;
+    border-radius: 32px;
     max-width: max-content;
 }
 .nav-link{
-    color: var(--white-color);
+    color: var(--black-primary-color);
     font-weight: 500;
     font-size: 20px;
     line-height: 26px;
@@ -138,20 +138,26 @@ section{
 /*============================HERO-SECTION=====================================*/
 .hero-section{
     min-height: 100dvh;
-    background: url('./assets/img/hero-section.jpg') no-repeat center center;
+    background: url('./assets/img/hero-bg.png') no-repeat center center;
     background-size: cover;
     position: relative;
 }
+.wrapper-title-hero{
+    max-width: 500px;
+    margin: 120px 0 0 30px;
+}
 .hero-title{
-    font-size: clamp(28px, 6vw, 68px);
-    font-weight: 400;
+    font-size: clamp(26px, 6vw, 38px);
+    font-weight: 600;
     line-height: 1.2;
-    color: var(--white-color);
+    color: var(--black-primary-color);
+    text-transform: uppercase;
 }
 .hero-subtitle{
     font-size: clamp(18px, 3vw, 26px);
     line-height: 1.4;
-    color: var(--black-primary-color);
+    font-weight: 400;
+    color: var(--black-secondary-color);
     margin-bottom: 48px;
 }
 
@@ -170,32 +176,61 @@ section{
 }
 /*============================HERO-SECTION=====================================*/
 
+.about-card{
+    background: #F6F6F6;
+}
+.about-card-title{
+    font-weight: 500;
+    font-size: 36px;
+    color: var(--black-primary-color);
+}
+.about-card-subtitle{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--black-secondary-color);
+}
+
+.about-circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #F99806; /* золотистый цвет */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.about-circle::before,
+.about-circle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 80px;      /* длина линии */
+    height: 8px;
+    background: linear-gradient(90deg, #F99806 0%, rgba(249, 152, 6, 0.4) 45.67%, rgba(249, 152, 6, 0) 100%);
+
+}
+
+.about-circle::before {
+    right: 100%;
+    margin-right: 10px;
+}
+
+.about-circle::after {
+    left: 100%;
+    margin-left: 10px;
+}
+
+
 
 /*============================ACADEMY-SECTION=====================================*/
 .academy-section {
-    background: #c3a483;
     padding: clamp(60px, 10vw, 142px) 0 clamp(60px, 12vw, 148px) 0;
     position: relative;
     overflow: hidden;
-}
-.bg-plane, .bg-map{
-    position: absolute;
-    display: block;
-    opacity: 40%;
-    max-width: 100%;
-    height: auto;
-}
-.bg-plane{
-    top: 50px;
-    left: 100px;
-    width: 600px;
-    height: 447px;
-}
-.bg-map{
-    width: 503px;
-    height: 450px;
-    bottom: 20px;
-    right: 40px;
 }
 
 .grid-gap{
