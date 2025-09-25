@@ -97,6 +97,11 @@ a{
     line-height: 1.2;
     color: var(--black-primary-color);
 }
+.R-20{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+}
 
 .R24-subtitle{
     font-weight: 400;
@@ -498,10 +503,6 @@ section{
     object-fit: contain;
 }
 
-.logo-item img:hover {
-    filter: grayscale(0%);
-}
-
 .fade-left,
 .fade-right {
     position: absolute;
@@ -511,15 +512,6 @@ section{
     pointer-events: none;
 }
 
-.fade-left {
-    left: 0;
-    background: linear-gradient(to right, #f8f9fa, transparent);
-}
-
-.fade-right {
-    right: 0;
-    background: linear-gradient(to left, #f8f9fa, transparent);
-}
 
 /* скрыть скроллбар */
 .partners-slider::-webkit-scrollbar {
@@ -553,12 +545,21 @@ section{
 
 .fade-left {
     left: 0;
-    background: linear-gradient(to right, #f8f9fa, transparent);
+    background: linear-gradient(to right, #F6F6F6, transparent);
 }
 
 .fade-right {
     right: 0;
-    background: linear-gradient(to left, #f8f9fa, transparent);
+    background: linear-gradient(to left, #F6F6F6, transparent);
 }
 
+/*=============================COOPERATION-SECTION=====================================*/
 
+
+
+/*=============================ADVANTAGES-SECTION=====================================*/
+.advantages-card{
+    background: #F6F6F6;
+}
+
+/*=============================ADVANTAGES-SECTION=====================================*/
