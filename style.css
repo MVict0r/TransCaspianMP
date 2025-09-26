@@ -186,23 +186,20 @@ section{
     margin-bottom: 48px;
     z-index: 6;
 }
-/*.main-title{*/
-/*    font-weight: 700;*/
-/*    font-size: 400px;*/
-/*    line-height: 100%;*/
-/*    text-transform: uppercase;*/
-/*    display: block;*/
 
-/*    position: absolute;*/
-/*    left: 50%;*/
-/*    transform: translateX(-50%);*/
-/*}*/
 .main-title {
     font-weight: 700;
     font-size: clamp(80px, 20vw, 400px); /* будет от 80px до 400px */
     line-height: 100%;
     text-transform: uppercase;
     display: block;
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*bottom: 80px;*/
+    /*transform: translateX(-50%);*/
+    /*z-index: 1;*/
+}
+.wrapper-gradient{
     position: absolute;
     left: 50%;
     bottom: 80px;
@@ -231,9 +228,14 @@ section{
 .layer-5{
     position: absolute;
     top: 128px;
-    right: 150px;
+    right: 0;
+    transform: translateX(-20%);
     z-index: 2;
 }
+/*.hero-section img {*/
+/*    max-width: 100%;*/
+/*    height: auto;*/
+/*}*/
 .gradient{
     height: 184px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
@@ -250,9 +252,9 @@ section{
             rgba(229, 137, 0, 0.6) 53.37%,
             rgba(229, 137, 0, 0) 85.03%
     );
-    -webkit-background-clip: text;  /* обрезаем фон по тексту */
-    -webkit-text-fill-color: transparent; /* делаем текст прозрачным */
-    background-clip: text; /* для Firefox */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 /*============================HERO-SECTION=====================================*/
@@ -649,6 +651,58 @@ section{
 /*=============================COOPERATION-SECTION=====================================*/
 
 
+/*=============================REVIEWS-SECTION=====================================*/
+.reviews {
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+    -ms-overflow-style: none;  /* IE/Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+.reviews::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.reviews-track {
+    display: flex;
+    gap: 20px;
+    animation: scrollReviews 90s linear infinite;
+}
+
+.review-card {
+    flex: 0 0 300px;
+    min-width: 300px;
+    max-width: 350px;
+    background: #ABABAB80;
+    border-radius: 12px;
+    scroll-snap-align: start;
+
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.review-card p {
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;   /* количество строк */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.head-card{
+    display: flex;
+    justify-content: space-between;
+}
+@keyframes scrollReviews {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%); /* половина трека уедет влево */
+    }
+}
 
 /*=============================ADVANTAGES-SECTION=====================================*/
 .advantages-card{
