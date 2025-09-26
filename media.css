@@ -17,6 +17,15 @@
         padding: 1rem;
         z-index: 9;
     }
+
+    .certificate-wrapper {
+        grid-template-columns: 1fr; /* одна колонка */
+        text-align: center;        /* выравниваем заголовок по центру */
+    }
+
+    .certificate-title {
+        padding: 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -25,4 +34,9 @@
         width: auto;
         object-fit: cover;
     }
+
+    section{
+        padding: 60px 10px;
+    }
 }
+

@@ -125,7 +125,7 @@ a{
 section{
     overflow: hidden;
     /*margin: 120px 0;*/
-    padding: 120px 0;
+    padding: 100px 10px;
 }
 /*===========================GENERAL===========================================*/
 
@@ -161,8 +161,9 @@ section{
     margin: 0;
     padding: 0;
     min-height: 100dvh;
-    background: url('./assets/img/hero-bg.png') no-repeat center center;
+    background: url('./assets/img/layer-1.png') no-repeat center center;
     background-size: cover;
+
     position: relative;
 }
 .wrapper-title-hero{
@@ -175,6 +176,7 @@ section{
     line-height: 1.2;
     color: var(--black-primary-color);
     text-transform: uppercase;
+    z-index: 6;
 }
 .hero-subtitle{
     font-size: clamp(18px, 3vw, 26px);
@@ -182,21 +184,77 @@ section{
     font-weight: 400;
     color: var(--black-secondary-color);
     margin-bottom: 48px;
+    z-index: 6;
+}
+/*.main-title{*/
+/*    font-weight: 700;*/
+/*    font-size: 400px;*/
+/*    line-height: 100%;*/
+/*    text-transform: uppercase;*/
+/*    display: block;*/
+
+/*    position: absolute;*/
+/*    left: 50%;*/
+/*    transform: translateX(-50%);*/
+/*}*/
+.main-title {
+    font-weight: 700;
+    font-size: clamp(80px, 20vw, 400px); /* будет от 80px до 400px */
+    line-height: 100%;
+    text-transform: uppercase;
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.layer-2{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+.layer-3{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+.layer-4{
+    position: absolute;
+    top: 58px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.layer-5{
+    position: absolute;
+    top: 128px;
+    right: 150px;
+    z-index: 2;
+}
+.gradient{
+    height: 184px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 4;
 }
 
-.hero-btn{
-    background: linear-gradient(180deg, #C7A56D 0%, #8F703D 100%);
-    border-radius: 10px;
-    border: 1px solid #269D4A;
-    color: var(--green-color);
-    padding: 13px 20px;
-    font-size: clamp(14px, 2.5vw, 20px);
+.gradient-text {
+    background: linear-gradient(
+            180deg,
+            #E58900 14.97%,
+            rgba(229, 137, 0, 0.6) 53.37%,
+            rgba(229, 137, 0, 0) 85.03%
+    );
+    -webkit-background-clip: text;  /* обрезаем фон по тексту */
+    -webkit-text-fill-color: transparent; /* делаем текст прозрачным */
+    background-clip: text; /* для Firefox */
 }
-.btn-more{
-    color: var(--white-color);
-    padding: 13px 20px;
-    font-size: clamp(16px, 2.5vw, 20px);
-}
+
 /*============================HERO-SECTION=====================================*/
 
 
@@ -226,11 +284,7 @@ section{
 
 
 /*============================ACADEMY-SECTION=====================================*/
-.academy-section {
-    /*padding: clamp(60px, 10vw, 142px) 0 clamp(60px, 12vw, 148px) 0;*/
-    position: relative;
-    overflow: hidden;
-}
+
 
 .grid-gap{
     display: grid;
@@ -238,7 +292,6 @@ section{
 }
 .academy-card-style {
     border: none;
-    border-radius: 48px;
     z-index: 20;
     padding: 0;
 }
@@ -274,7 +327,6 @@ section{
 }
 
 .statistic-wrapper{
-    padding: 28px;
     display: grid;
     grid-gap: 24px;
     /*background: rgba(246, 246, 246, 1);*/
@@ -293,6 +345,7 @@ section{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    /*margin-bottom: 20px;*/
 }
 .statistic-card{
     flex: 1;
@@ -316,6 +369,13 @@ section{
     font-size: 16px;
     line-height: 22px;
     color: var(--black-primary-color);
+}
+.about-svg{
+    svg {
+        max-width: 100%;
+        height: auto;
+        display: block; /* убирает лишние отступы */
+    }
 }
 
 /*============================ACADEMY-SECTION=====================================*/
@@ -373,22 +433,55 @@ section{
 
 /*=============================CERTIFICATE-SECTION=====================================*/
 
-.certificate-wrapper{
+/*.certificate-wrapper{*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr 1fr;*/
+/*    grid-gap: 20px;*/
+/*    background: #1F1F1F;*/
+/*    border: 2px solid;*/
+/*    border-radius: 44px;*/
+/*    border-image-source: linear-gradient(180deg, rgba(0, 0, 0, 0.32) 0%, rgba(250, 163, 31, 0.6) 51.44%, rgba(0, 0, 0, 0.02) 100%);*/
+/*}*/
+/*.certificate-title{*/
+/*    font-weight: 500;*/
+/*    font-size: 45px;*/
+/*    line-height: 1.2;*/
+/*    color: var(--white-color);*/
+/*    padding: 40px;*/
+/*}*/
+
+.certificate-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     background: #1F1F1F;
     border: 2px solid;
     border-radius: 44px;
-    border-image-source: linear-gradient(180deg, rgba(0, 0, 0, 0.32) 0%, rgba(250, 163, 31, 0.6) 51.44%, rgba(0, 0, 0, 0.02) 100%);
+    border-image-source: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.32) 0%,
+            rgba(250, 163, 31, 0.6) 51.44%,
+            rgba(0, 0, 0, 0.02) 100%
+    );
+    align-items: center; /* выравниваем картинку и текст */
 }
-.certificate-title{
+
+.certificate-title {
     font-weight: 500;
-    font-size: 45px;
+    font-size: clamp(26px, 5vw, 45px); /* адаптивный размер */
     line-height: 1.2;
     color: var(--white-color);
     padding: 40px;
+    text-align: start;
 }
+
+.certificate-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+
 /*=============================CERTIFICATE-SECTION=====================================*/
 
 
