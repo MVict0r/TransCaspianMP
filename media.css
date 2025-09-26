@@ -4,7 +4,7 @@
     }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 991px) {
     .navbar-collapse {
         position: absolute;
         top: 100%;
@@ -19,28 +19,14 @@
     }
 
     .certificate-wrapper {
-        grid-template-columns: 1fr; /* одна колонка */
-        text-align: center;        /* выравниваем заголовок по центру */
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 
     .certificate-title {
         padding: 20px;
     }
-}
 
-@media (max-width: 768px) {
-    .lms-card img {
-        max-height: 300px;
-        width: auto;
-        object-fit: cover;
-    }
-
-    section{
-        padding: 60px 10px;
-    }
-}
-
-@media (max-width: 991.98px) {
     .hero-section{
         margin: 0;
         padding: 0;
@@ -74,7 +60,7 @@
 
     .main-title {
         font-weight: 700;
-        font-size: clamp(80px, 20vw, 400px); /* будет от 80px до 400px */
+        font-size: clamp(80px, 20vw, 400px);
         line-height: 100%;
         text-transform: uppercase;
         display: block;
@@ -83,7 +69,6 @@
         /*bottom: 80px;*/
         /*transform: translateX(-50%);*/
         /*z-index: 1;*/
-        display: block;
     }
     .wrapper-gradient{
         position: absolute;
@@ -175,7 +160,18 @@
         transform: translate(-50%, -30%);
         z-index: 1;
     }
+}
 
+@media (max-width: 768px) {
+    .lms-card img {
+        max-height: 300px;
+        width: auto;
+        object-fit: cover;
+    }
+
+    section{
+        padding: 60px 10px;
+    }
 }
 
 @media (max-width: 760px) {
@@ -214,7 +210,7 @@
 }
 
 
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
     .wrapper-title-hero {
         text-align: start;
         margin: 100px 0;

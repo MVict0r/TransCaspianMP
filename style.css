@@ -57,8 +57,6 @@ body{
     letter-spacing: -1px;
 }
 
-
-
 .container {
     max-width: 1360px !important;
 }
@@ -124,7 +122,6 @@ a{
 }
 section{
     overflow: hidden;
-    /*margin: 120px 0;*/
     padding: 100px 10px;
 }
 /*===========================GENERAL===========================================*/
@@ -190,10 +187,9 @@ section{
 
 .main-title {
     font-weight: 700;
-    font-size: clamp(80px, 20vw, 400px); /* будет от 80px до 400px */
+    font-size: clamp(80px, 20vw, 400px);
     line-height: 100%;
     text-transform: uppercase;
-    display: block;
     /*position: absolute;*/
     /*left: 50%;*/
     /*bottom: 80px;*/
@@ -243,10 +239,6 @@ section{
 
     display: none;
 }
-/*.hero-section img {*/
-/*    max-width: 100%;*/
-/*    height: auto;*/
-/*}*/
 .gradient{
     height: 184px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
@@ -257,7 +249,6 @@ section{
 
     display: none;
 }
-
 .gradient-text {
     background: linear-gradient(
             180deg,
@@ -295,12 +286,7 @@ section{
     margin-right: 10px;
 }
 
-
-
-
 /*============================ACADEMY-SECTION=====================================*/
-
-
 .grid-gap{
     display: grid;
     gap: clamp(40px, 6vw, 104px);
@@ -360,7 +346,6 @@ section{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /*margin-bottom: 20px;*/
 }
 .statistic-card{
     flex: 1;
@@ -368,7 +353,6 @@ section{
     flex-direction: column;
     gap: 10px;
     padding: 20px;
-    /*background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 1) 100%);*/
     background: #F6F6F6;
     border: 1px solid var(--white-color);
     border-radius: 24px;
@@ -389,7 +373,7 @@ section{
     svg {
         max-width: 100%;
         height: auto;
-        display: block; /* убирает лишние отступы */
+        display: block;
     }
 }
 
@@ -447,24 +431,6 @@ section{
 
 
 /*=============================CERTIFICATE-SECTION=====================================*/
-
-/*.certificate-wrapper{*/
-/*    display: grid;*/
-/*    grid-template-columns: 1fr 1fr;*/
-/*    grid-gap: 20px;*/
-/*    background: #1F1F1F;*/
-/*    border: 2px solid;*/
-/*    border-radius: 44px;*/
-/*    border-image-source: linear-gradient(180deg, rgba(0, 0, 0, 0.32) 0%, rgba(250, 163, 31, 0.6) 51.44%, rgba(0, 0, 0, 0.02) 100%);*/
-/*}*/
-/*.certificate-title{*/
-/*    font-weight: 500;*/
-/*    font-size: 45px;*/
-/*    line-height: 1.2;*/
-/*    color: var(--white-color);*/
-/*    padding: 40px;*/
-/*}*/
-
 .certificate-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -478,12 +444,12 @@ section{
             rgba(250, 163, 31, 0.6) 51.44%,
             rgba(0, 0, 0, 0.02) 100%
     );
-    align-items: center; /* выравниваем картинку и текст */
+    align-items: center;
 }
 
 .certificate-title {
     font-weight: 500;
-    font-size: clamp(26px, 5vw, 45px); /* адаптивный размер */
+    font-size: clamp(26px, 5vw, 45px);
     line-height: 1.2;
     color: var(--white-color);
     padding: 40px;
@@ -593,13 +559,13 @@ section{
 
 .logos {
     display: flex;
-    gap: 50px; /* расстояние между логотипами */
+    gap: 50px;
 }
 
 .logo-item {
     flex: 0 0 auto;
-    width: 100px;   /* можно подогнать */
-    height: 60px;   /* одинаковая высота */
+    width: 100px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -620,8 +586,6 @@ section{
     pointer-events: none;
 }
 
-
-/* скрыть скроллбар */
 .partners-slider::-webkit-scrollbar {
     display: none;
 }
@@ -630,7 +594,6 @@ section{
     scrollbar-width: none;
 }
 
-/* Анимация */
 @keyframes scroll-logos {
     0% {
         transform: translateX(0);
@@ -640,7 +603,6 @@ section{
     }
 }
 
-/* затемнение */
 .fade-left,
 .fade-right {
     position: absolute;
@@ -669,11 +631,11 @@ section{
     overflow: hidden;
     width: 100%;
     padding: 20px 0;
-    -ms-overflow-style: none;  /* IE/Edge */
-    scrollbar-width: none;     /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 .reviews::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+    display: none;
 }
 
 .reviews-track {
@@ -699,7 +661,7 @@ section{
 .review-card p {
     margin: 0;
     display: -webkit-box;
-    -webkit-line-clamp: 6;   /* количество строк */
+    -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -713,7 +675,7 @@ section{
         transform: translateX(0);
     }
     to {
-        transform: translateX(-50%); /* половина трека уедет влево */
+        transform: translateX(-50%);
     }
 }
 
