@@ -141,7 +141,7 @@
 
     .wrapper-title-hero {
         text-align: start;
-        margin: 80px 0;
+        margin: 60px 0;
     }
 
     .hero-title {
@@ -177,7 +177,7 @@
 @media (max-width: 760px) {
     .wrapper-title-hero {
         text-align: start;
-        margin: 80px 0;
+        margin: 60px 0;
     }
 
     .hero-title {
@@ -214,7 +214,7 @@
 @media (max-width: 575px) {
     .wrapper-title-hero {
         text-align: start;
-        margin: 80px 0;
+        margin: 60px 0;
     }
 
     .hero-title {
