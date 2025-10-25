@@ -165,11 +165,11 @@ section{
     position: relative;
 }
 .wrapper-title-hero{
-    max-width: 600px;
+    max-width: 700px;
     margin: 120px 0 0 30px;
 }
 .hero-title{
-    font-size: clamp(26px, 6vw, 38px);
+    font-size: clamp(26px, 6vw, 36px);
     font-weight: 600;
     line-height: 1.2;
     color: var(--black-primary-color);
@@ -448,8 +448,8 @@ section{
 }
 
 .certificate-title {
-    font-weight: 500;
-    font-size: clamp(26px, 5vw, 45px);
+    font-weight: 400;
+    font-size: clamp(26px, 5vw, 40px);
     line-height: 1.2;
     color: var(--white-color);
     padding: 40px;
@@ -570,6 +570,9 @@ section{
     justify-content: center;
     align-items: center;
 }
+.logo-item:first-child {
+    margin-left: 50px;
+}
 
 .logo-item img {
     max-height: 100%;
@@ -685,3 +688,15 @@ section{
 }
 
 /*=============================ADVANTAGES-SECTION=====================================*/
+
+
+.footer-address {
+    white-space: normal;
+}
+
+/* На ноутбуках и компьютерах — запрет переносов */
+@media (min-width: 1400px) {
+    .footer-address {
+        white-space: nowrap;
+    }
+}
