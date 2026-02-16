@@ -219,12 +219,12 @@
 
     .hero-title {
         margin-bottom: 10px;
-        font-size: 24px;
+        font-size: 22px;
     }
 
 
     .main-title {
-        font-size: clamp(50px, 25vw, 120px);
+        font-size: clamp(45px, 25vw, 120px);
     }
 
     .wrapper-gradient{
