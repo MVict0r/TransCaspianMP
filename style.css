@@ -167,6 +167,8 @@ section{
 .wrapper-title-hero{
     max-width: 900px;
     margin: 120px 0 0 30px;
+    position: relative;
+    z-index: 10;
 }
 .hero-title{
     font-size: clamp(26px, 6vw, 36px);
@@ -184,17 +186,17 @@ section{
     margin-bottom: 48px;
     z-index: 6;
 }
+.hero-title, .hero-subtitle {
+    position: relative;
+    z-index: 6;
+}
+
 
 .main-title {
     font-weight: 700;
     font-size: clamp(80px, 20vw, 400px);
     line-height: 100%;
     text-transform: uppercase;
-    /*position: absolute;*/
-    /*left: 50%;*/
-    /*bottom: 80px;*/
-    /*transform: translateX(-50%);*/
-    /*z-index: 1;*/
     display: none;
 }
 .wrapper-gradient{

@@ -1,3 +1,9 @@
+@media (max-width: 1440px) {
+    .wrapper-title-hero {
+        max-width: 65%;
+    }
+}
+
 @media (max-width: 1200px){
     .bg-academy-card{
         opacity: 10%;
@@ -64,11 +70,6 @@
         line-height: 100%;
         text-transform: uppercase;
         display: block;
-        /*position: absolute;*/
-        /*left: 50%;*/
-        /*bottom: 80px;*/
-        /*transform: translateX(-50%);*/
-        /*z-index: 1;*/
     }
     .wrapper-gradient{
         position: absolute;
@@ -112,10 +113,7 @@
 
         display: none;
     }
-    /*.hero-section img {*/
-    /*    max-width: 100%;*/
-    /*    height: auto;*/
-    /*}*/
+
     .gradient{
         height: 184px;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
@@ -159,6 +157,16 @@
         left: 50%;
         transform: translate(-50%, -30%);
         z-index: 1;
+    }
+}
+
+@media (max-height: 850px) {
+    .wrapper-title-hero {
+        margin-top: 80px;
+    }
+
+    .hero-subtitle {
+        margin-bottom: 24px;
     }
 }
 
